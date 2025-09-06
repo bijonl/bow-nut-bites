@@ -5,11 +5,48 @@
     color: $footer-color; 
     .site-footer-content-container {
         .site-footer-content-row {
-            @import './partials/social-list'; 
+            padding-bottom: 40px;
+            border-bottom: solid 1px $color-primary; 
             .footer-logo-wrapper {
                 max-width: 100px; 
             }
+
+            .logo-note-wrapper {
+
+                padding-top: 20px; 
+                font-style: italic;
+                font-size: 16px;
+                p {
+                    margin-bottom: 0; 
+                }
+            }
+
+            .footer-main-menu-col  {
+                nav {
+                    @import './partials/social-list'; 
+                    ul {
+                        &.social-list {
+                            padding-top: 25px; 
+                            li {
+                                padding-bottom: 0; 
+                                margin-bottom: 0; 
+                            }
+                        }
+                        li {
+                            padding-bottom: 25px; 
+                            &:last-child {
+                                padding-bottom: 0; 
+                            }
+                        }
+                    }
+                }
+            }
         
+        }
+
+        .site-copyright-content-row {
+            padding-top: 40px;
+            font-size: 14px; 
         }
     }
 }

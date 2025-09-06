@@ -8,16 +8,15 @@ $footer_logo = get_field('footer_logo', 'options');
     <div class="site-footer-content-container container">
 
 
-        <div class="site-footer-content-row row align-items-center">
+        <div class="site-footer-content-row row">
             <div class="footer-logo-col col">
                 <?php include locate_template('components/footer/footer-logo.php'); ?>
                 <div class="logo-note-wrapper">
                     <p>This is a note about being a locally owned business</p>
                 </div>
             </div>
-            <div class="footer-logo-col col">
-                <?php include locate_template('components/footer/footer-menu.php'); ?>
-            </div>
+            
+            <?php include locate_template('components/footer/footer-menu.php'); ?>
           
            
         </div>
@@ -26,14 +25,9 @@ $footer_logo = get_field('footer_logo', 'options');
             <div class="footer-copyright-col col">
                 <?php include locate_template('components/footer/copyright.php'); ?>
             </div>
-            <div class="footer-util-menu-col col">
-                <?php echo 'menu'; ?>
+            <div class="footer-util-menu-col col-sm-3">
+                <?php include locate_template('components/footer/footer-utility-menu.php'); ?>
             </div>
-            <?php if (have_rows('social_media_footer', 'options')) { ?>
-                <nav class="footer-social-col col" role="navigation" aria-label="Social Media Links">
-                    <?php include locate_template('components/footer/social-icons.php'); ?>
-                </nav>
-            <?php }; ?>
         </div>
 
 

@@ -18,7 +18,7 @@ $font-secondary: 'Baloo 2', 'Trebuchet MS', sans-serif;
 $heading-font: $font-secondary; 
 $body-text-font: $font-primary; 
 $paragraph-font: $font-primary; 
-$base-font-size: 20px; 
+$base-font-size: 18px; 
 $line-height-base: 1.6;
 
 // Text Colors
@@ -39,8 +39,8 @@ $secondary-background-text-color: $base-text-color;
 $solid-button-background: $color-secondary; 
 $solid-button-border-color: $color-primary; 
 $solid-button-text-color: $text-light-color; 
-$solid-button-padding-horizontal: 20px;
-$solid-button-padding-vertical: 20px;
+$solid-button-padding-horizontal: 16px;
+$solid-button-padding-vertical: 14px;
 $solid-button-border-radius: 30px; 
 $solid-button-min-width: 200px; 
 
@@ -67,7 +67,7 @@ $menu-z-index: 6;
 $hamburger-z-index: 7;
 
 // Footer Variables
-$footer-padding: 30px; 
+$footer-padding: 60px; 
 $footer-background-color: $color-secondary; 
 $footer-color: $base-text-color; 
 

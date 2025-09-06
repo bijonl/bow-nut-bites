@@ -10,6 +10,7 @@ define( 'PW_THEME_CHILD_VERSION', $theme->get( 'Version' ) );
 require_once get_stylesheet_directory() . '/includes/nav-menus.php';
 require_once get_stylesheet_directory() . '/includes/custom-post-types/events.php';
 
+add_image_size('event-thumbnail', 600, 600); 
 
 
 function pw_enqueue_scripts() {

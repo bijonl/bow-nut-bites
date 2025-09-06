@@ -21,7 +21,7 @@ $text_col_width = 'col-sm-6'; ?>
     <?php include(locate_template('blocks/partials/title-area.php')); ?>
 
     <div class="two-col-container container">
-        <div class="two-col-row row">
+        <div class="two-col-row row align-items-center">
             <div class="two-col-col image-col <?php echo $image_col_width ?> <?php echo $column_order ?>">
                 <?php echo wp_get_attachment_image($image, 'full', false, array('class' => 'w-100 h-auto')) ?>
             </div>

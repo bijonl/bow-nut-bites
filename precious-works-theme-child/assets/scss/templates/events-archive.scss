@@ -1,0 +1,41 @@
+
+.event-archive-content-section {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    .event-posts-container {
+        .event-posts-row {
+            .event-posts-col {
+                padding-bottom: 30px; 
+                &:last-child {
+                    padding-bottom: 0; 
+                }
+                .single-event-tile  {
+                    align-items: center;
+                    @extend .rounded-corners; 
+                    border: solid 2px $color-tertiary; 
+                    padding: 30px; 
+                        .post-meta-content {
+                            padding-bottom: 15px; 
+                        }
+                        .single-event-image-wrapper {
+                            width:25%; 
+                            img {
+                                width: 100%;
+                                height: auto;
+                                aspect-ratio: 1/1;
+                            }
+                        }
+
+                        .single-event-button-wrapper {
+                            width: 60%; 
+                        }
+
+                        .post-meta-wrapper {
+                            width: 65%; 
+                            margin: auto; 
+                        }
+                    }
+                }
+            }
+        }
+    }

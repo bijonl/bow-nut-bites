@@ -5,6 +5,7 @@ $event_name_display = !empty($event_name) ? $event_name : $event_title;
 $event_description = get_field('event_description', $event_id);
 $event_link = get_field('event_link', $event_id);
 $event_date = get_field('event_date', $event_id);
+$event_date_formatted = date('F j, Y', strtotime($event_date)); 
 $start_time = get_field('start_time', $event_id);
 $end_time = get_field('end_time', $event_id);
 $event_location = get_field('event_location', $event_id);
@@ -18,10 +19,10 @@ if( !empty($event_location) ) {
 
 
 
-$event_featured_image = get_the_post_thumbnail($event_id, 'full'); 
+$event_featured_image = get_post_thumbnail_id($event_id, 'full'); 
 $default_event_picture = get_field('default_event_picture', 'options'); 
 
-$event_display_image = $event_featured_image 
+$event_display_image_id = $event_featured_image 
 ? $event_featured_image 
-: wp_get_attachment_image($default_event_picture, 'full', false); 
+: $default_event_picture; 
 ?>
