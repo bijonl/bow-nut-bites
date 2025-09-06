@@ -52,6 +52,29 @@ function child_disable_gutenberg( $use_block_editor, $post ) {
 }
 add_filter( 'use_block_editor_for_post', 'child_disable_gutenberg', 11, 2 );
 
+add_action('acf/init', 'pw_event_subpage'); 
+
+function pw_event_subpage() {
+  if( function_exists('acf_add_options_page') ) {
+    acf_add_options_sub_page(array(
+        'page_title'    => 'Event Settings',
+        'menu_title'    => 'Event Settings',
+        'parent_slug'   => 'edit.php?post_type=events',
+    ));
+
+  }
+}; 
+
+// Method 2: Setting.
+function my_acf_init() {
+    acf_update_setting('google_api_key', 'AIzaSyAmBuN8FAY5ut7wvJsMwIDoyRJq0YA9y-o');
+}
+add_action('acf/init', 'my_acf_init');
+
+
+
+?>
+
 
 
 

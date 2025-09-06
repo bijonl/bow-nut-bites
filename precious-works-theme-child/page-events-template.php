@@ -11,7 +11,7 @@ $event_args = array(
 
 $events = new WP_Query($event_args); 
 $event_title = get_the_title(); 
-$event_intro = get_field('blog_page_intro');
+$event_intro = get_field('event_page_intro');
 $events_per_row = 2;  
 
 
@@ -19,10 +19,10 @@ $events_per_row = 2;
 ?>
 
 <?php echo get_header(); ?>
-    <section class="blog-archive-hero-section background-primary" id="blog-archive-hero">
-        <div class="blog-archive-container container">
-          <div class="blog-archive-row row align-items-center">
-            <div class="blog-archive-col col">
+    <section class="event-archive-hero-section background-primary" id="event-archive-hero">
+        <div class="event-archive-container container">
+          <div class="event-archive-row row align-items-center">
+            <div class="event-archive-col col">
                 <h1 class="mb-0"><?php echo $event_title ?></h1>
                 <p class="mb-0"><?php echo $event_intro ?></p>
             </div>
@@ -30,16 +30,16 @@ $events_per_row = 2;
         </div>
     </section>
 
-    <section class="blog-archive-content-section" id="blog-content-section">
-        <div class="blog-posts-container container">
-          <div class="blog-posts-row row row-cols-<?php echo $events_per_row ?>">
+    <section class="event-archive-content-section" id="event-content-section">
+        <div class="event-posts-container container">
+          <div class="event-posts-row row">
            <?php if($events->have_posts()) {
                     while($events->have_posts()) { 
                         $events->the_post(); 
                         $event_id = get_the_id(); 
                         include locate_template('components/variables/event-variables.php'); ?>
-                        <div class="blog-posts-col col">
-                            <?php include locate_template('components/blog/archive-blog-tile.php'); ?>
+                        <div class="event-posts-col col-12">
+                            <?php include locate_template('components/events/archive-event-tile.php'); ?>
                         </div>
                 <?php
                     }
