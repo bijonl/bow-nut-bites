@@ -5,6 +5,19 @@
   background-color: $header-background;
   padding-top: 12px; 
   padding-bottom: 12px; 
+
+  .pw-solid-button {
+      background-color: $color-tertiary; 
+      color: $color-secondary; 
+      font-size: 24px; 
+      padding-top: 14px; 
+      padding-bottom: 14px; 
+      &:hover {
+        background-color: #679436; 
+        color: $text-light-color; 
+      }
+
+  }
   &.is-scrolling {
       position: sticky;
       top: 0;
@@ -12,6 +25,13 @@
   }
 
   .site-header-container {
+
+    .site-header-utility-row {
+      padding-bottom: 25px; 
+      width: 10%; 
+    }
+
+
     .site-header-row {
       display: flex;
       justify-content: space-between;

@@ -17,8 +17,7 @@
                 "id": ""
             },
             "choices": {
-                "none": "None",
-                "primary": "Primary",
+                "primary": "None",
                 "secondary": "Secondary"
             },
             "default_value": false,
@@ -66,5 +65,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1755702930
+    "modified": 1757182747
 }

@@ -7,9 +7,9 @@ $site_name = get_site_option('blogname');
 
 <header id="site-header" class="site-header">
   <div class="site-header-container container">
-    <div class="site-header-utility-row d-flex justify-content-end">
-        <div>Cart</div>
-        <div>Account</div>
+    <div class="site-header-utility-row d-flex justify-content-between ms-auto">
+        <div><i class="fa-solid fa-cart-shopping"></i></div>
+        <div><i class="fa-solid fa-user"></i></div>
     </div>
     <div class="site-header-row row align-items-center">
 

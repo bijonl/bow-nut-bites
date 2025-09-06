@@ -2,7 +2,7 @@
     wp_nav_menu( array(
         'theme_location' => 'Header Menu Left', 
         'menu' => 'header-menu-left', 
-        'menu_class' => 'nav-list-style justify-content-around',
+        'menu_class' => 'nav-list-style justify-content-between',
         'container' => false,
         'fallback_cb'     => false, // avoid dumping all pages without a menu
     ) );

@@ -75,4 +75,29 @@ function pw_limit_allowed_blocks( $allowed_blocks, $editor_context ) {
     }, array_keys( $default_blocks ) );
 
     return array_merge( $allowed_core_blocks, $acf_blocks );
-} ?>
+} 
+
+function pw_headings_paragraphs_in_bootstrap( $block_content, $block ) {
+    // Only modify frontend (not admin/editor)
+    if ( is_admin() ) {
+        return $block_content;
+    }
+
+    // Target core heading and paragraph blocks
+    if ( $block['blockName'] === 'core/heading' || $block['blockName'] === 'core/paragraph' ) {
+        if ( trim( $block_content ) !== '' ) {
+            $block_content = '<div class="container"><div class="row"><div class="col-12">'
+                           . $block_content
+                           . '</div></div></div>';
+        }
+    }
+
+    return $block_content;
+}
+add_filter( 'render_block', 'pw_headings_paragraphs_in_bootstrap', 10, 2 );
+
+
+
+
+
+?>
