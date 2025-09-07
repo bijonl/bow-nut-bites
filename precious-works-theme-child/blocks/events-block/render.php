@@ -29,7 +29,7 @@ if(empty($events)) {
     } ?>
     <?php if($events) { ?>
         <div class="events-container container">
-            <div class="events-row row">
+            <div class="events-row row gx-5">
                 <?php foreach($events as $event_id) { ?>
                     <div class="events-col col-sm-4">
 

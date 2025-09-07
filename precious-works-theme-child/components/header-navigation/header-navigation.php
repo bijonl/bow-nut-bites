@@ -13,7 +13,7 @@ $site_name = get_site_option('blogname');
     </div>
     <div class="site-header-row row align-items-center">
 
-      <div class="header-menu menu-left col-sm-5 d-none d-lg-block">
+      <div class="header-menu menu-left col-sm-4 d-none d-lg-block">
           <?php include(locate_template('components/header-navigation/partials/header-menu-left.php')); ?>
       </div>
       <!-- Shared Logo -->
@@ -23,7 +23,7 @@ $site_name = get_site_option('blogname');
         </div>
       </div>
       <!-- Desktop Menu -->
-      <div class="header-menu menu-left col-sm-5 d-none d-lg-block">
+      <div class="header-menu menu-left col-sm-4 d-none d-lg-block">
           <?php include(locate_template('components/header-navigation/partials/header-menu-right.php')); ?>
       </div>
       <!-- Mobile Hamburger & Slide-Out Menu -->

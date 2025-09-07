@@ -3,8 +3,9 @@
 // ===============================
 .site-header {
   background-color: $header-background;
-  padding-top: 12px; 
-  padding-bottom: 12px; 
+  padding-bottom: 35px; 
+  padding-top: 35px; 
+
 
   .pw-solid-button {
       background-color: $color-tertiary; 
@@ -22,6 +23,17 @@
       position: sticky;
       top: 0;
       z-index: 1020;
+      transition: all 0.2s ease-in-out;
+      padding-bottom: 20px; 
+      padding-top: 20px; 
+
+      .site-header-container .site-header-row .site-header-logo-col .site-brand-logo-wrapper {
+        img {
+          width: 100px; 
+          height: auto; 
+          transition: all 0.2s ease-in-out;
+        }
+      }
   }
 
   .site-header-container {
@@ -42,6 +54,11 @@
         .site-brand-logo-wrapper {
           width: $header-logo-width;
           height: $header-logo-height;
+          img {
+            width: 100%; 
+            height: auto; 
+            transition: all 0.2s ease-in-out;
+          }
         }
       }
 

@@ -2,12 +2,12 @@
 
 
 <div class="single-event">
-    <div class="single-event-image-wrapper">
-        <?php echo wp_get_attachment_image($event_display_image_id, 'landscape', false, array('class'=>'w-100 ratio-4x3')) ?>
+    <div class="single-event-image-wrapper w-80">
+        <?php echo wp_get_attachment_image($event_display_image_id, 'landscape', false, array('class'=>'w-100 h-auto ratio-4x3')) ?>
     </div>
     <div class="single-event-text-content">
         <div class="single-event-title-container">
-            <h3 class="single-event-title h5"><?php echo $event_name_display ?></h3>
+            <h3 class="single-event-title h6"><?php echo $event_name_display ?></h3>
              <?php if ($event_date_formatted || $start_time || $end_time) { ?>
             <div class="d-flex justify-content-between">
                 <?php if ($event_date_formatted) { ?>
