@@ -7724,6 +7724,7 @@ small, .small {
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion {
   width: 100%;
   display: flex;
+  color: inherit;
   justify-content: space-between;
   align-items: center;
   background: none;
@@ -7735,12 +7736,27 @@ small, .small {
   cursor: pointer;
   transition: background-color 0.25s ease;
 }
+.accordions-container .accordions-row .accordions-col .single-accordion .accordion i {
+  transition: all 0.25s ease;
+  font-size: 35px;
+}
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion:hover {
-  background-color: rgb(77.05625, 154.75, 232.44375);
-  border-radius: 12px;
+  pointer-events: cursor;
+  color: rgb(165, 190, 0);
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion svg {
   transition: transform 0.25s ease;
+}
+.accordions-container .accordions-row .accordions-col .single-accordion .accordion.is-open {
+  transition: all 0.25s ease;
+}
+.accordions-container .accordions-row .accordions-col .single-accordion .accordion.is-open h6, .accordions-container .accordions-row .accordions-col .single-accordion .accordion.is-open .h6 {
+  color: rgb(165, 190, 0);
+}
+.accordions-container .accordions-row .accordions-col .single-accordion .accordion.is-open i {
+  transition: all 0.25s ease;
+  color: rgb(165, 190, 0);
+  transform: rotate(180deg);
 }
 .accordions-container .accordions-row .accordions-col .single-accordion .accordion.is-open svg {
   transform: rotate(180deg);

@@ -4,7 +4,7 @@
         <?php 
             echo wp_get_attachment_image(
                 $event_display_image_id, 
-                'event-thumbnail', 
+                'square', 
                 false, 
                 array(
                     'alt' => $event_name_display ? esc_attr($event_name_display) : 'Event image'

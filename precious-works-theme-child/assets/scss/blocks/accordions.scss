@@ -13,6 +13,7 @@
                 .accordion {
                     width: 100%;
                     display: flex;
+                    color: inherit;
                     justify-content: space-between;
                     align-items: center;
                     background: none;
@@ -23,21 +24,34 @@
                     text-align: left;
                     cursor: pointer;
                     transition: background-color $accordion-transition;
+                    i {
+                        transition: all $accordion-transition;
+                        font-size: 35px;
+                    }
 
                     &:hover {
-                        background-color: lighten($color-secondary, 45%);
-                        border-radius: 12px; 
+                        pointer-events: cursor; 
+                        color: $color-tertiary; 
                     }
 
                     // icon rotation skeleton
                     svg {
-                    transition: transform $accordion-transition;
+                        transition: transform $accordion-transition;
                     }
 
                     &.is-open {
-                    svg {
-                        transform: rotate(180deg);
-                    }
+                        transition: all $accordion-transition;
+                        h6 {
+                            color: $color-tertiary;  
+                        }
+                        i {
+                            transition: all $accordion-transition;
+                            color: $color-tertiary;  
+                            transform: rotate(180deg);
+                        }
+                        svg {
+                            transform: rotate(180deg);
+                        }
                     }
                 }
 
