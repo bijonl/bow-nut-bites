@@ -3,8 +3,17 @@
 // ===============================
 .site-header {
   background-color: $header-background;
-  padding-bottom: 35px; 
-  padding-top: 35px; 
+  padding-bottom: 15px; 
+  padding-top: 15px; 
+
+  .main-navigation {
+    i {
+      font-size: 35px; 
+      &:hover {
+        color: $color-tertiary; 
+      }
+    }
+  }
 
 
   .pw-solid-button {
@@ -55,7 +64,7 @@
           width: $header-logo-width;
           height: $header-logo-height;
           img {
-            width: 100%; 
+            width: 130px; 
             height: auto; 
             transition: all 0.2s ease-in-out;
           }

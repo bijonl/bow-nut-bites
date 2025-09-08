@@ -7,13 +7,13 @@ $site_name = get_site_option('blogname');
 
 <header id="site-header" class="site-header">
   <div class="site-header-container container">
-    <div class="site-header-utility-row d-flex justify-content-between ms-auto">
+    <!-- <div class="site-header-utility-row d-flex justify-content-between ms-auto">
         <div><i class="fa-solid fa-cart-shopping"></i></div>
         <div><i class="fa-solid fa-user"></i></div>
-    </div>
+    </div> -->
     <div class="site-header-row row align-items-center">
 
-      <div class="header-menu menu-left col-sm-4 d-none d-lg-block">
+      <div class="header-menu menu-left col-sm-5 d-none d-lg-block">
           <?php include(locate_template('components/header-navigation/partials/header-menu-left.php')); ?>
       </div>
       <!-- Shared Logo -->
@@ -23,7 +23,7 @@ $site_name = get_site_option('blogname');
         </div>
       </div>
       <!-- Desktop Menu -->
-      <div class="header-menu menu-left col-sm-4 d-none d-lg-block">
+      <div class="header-menu menu-left col-sm-5 d-none d-lg-block">
           <?php include(locate_template('components/header-navigation/partials/header-menu-right.php')); ?>
       </div>
       <!-- Mobile Hamburger & Slide-Out Menu -->

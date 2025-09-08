@@ -7420,8 +7420,14 @@ small, .small {
 
 .site-header {
   background-color: rgb(9, 40, 71);
-  padding-bottom: 35px;
-  padding-top: 35px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.site-header .main-navigation i {
+  font-size: 35px;
+}
+.site-header .main-navigation i:hover {
+  color: rgb(165, 190, 0);
 }
 .site-header .pw-solid-button {
   background-color: rgb(165, 190, 0);
@@ -7461,7 +7467,7 @@ small, .small {
   height: auto;
 }
 .site-header .site-header-container .site-header-row .site-header-logo-col .site-brand-logo-wrapper img {
-  width: 100%;
+  width: 130px;
   height: auto;
   transition: all 0.2s ease-in-out;
 }
