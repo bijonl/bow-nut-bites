@@ -74,6 +74,24 @@
     'core/image',
     'core/separator',
     'core/spacer',
+
+     // WooCommerce blocks
+    'woocommerce/all-products',
+    'woocommerce/product-category',
+    'woocommerce/product-tag',
+    'woocommerce/featured-product',
+    'woocommerce/featured-category',
+    'woocommerce/handpicked-products',
+    'woocommerce/product-best-sellers',
+    'woocommerce/product-new',
+    'woocommerce/product-on-sale',
+    'woocommerce/product-top-rated',
+    'woocommerce/reviews-by-product',
+    'woocommerce/reviews-by-category',
+    'woocommerce/product-search',
+    'woocommerce/mini-cart',
+    'woocommerce/cart',
+    'woocommerce/checkout',
 );
 
 
