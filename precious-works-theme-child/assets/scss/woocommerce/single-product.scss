@@ -1,0 +1,16 @@
+.single-product-section {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    .single_add_to_cart_button.button.alt {
+        @extend .pw-solid-button; 
+        background-color: $color-secondary;
+    }
+
+    div.product p.price {
+        color: $text-light-color; 
+    }
+}
+
+.woocommerce-breadcrumb {
+    display: none;
+}

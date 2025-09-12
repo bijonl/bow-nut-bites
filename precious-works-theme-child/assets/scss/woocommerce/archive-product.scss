@@ -1,0 +1,14 @@
+.archive-product-section {
+    padding-top: 100px; 
+    padding-bottom: 100px; 
+    .archive-product-title-row {
+        padding-bottom: 50px; 
+    }
+    .woocommerce-ordering, .woocommerce-result-count {
+        display: none; 
+    }
+
+    ul.products li.product .price {
+        color: $text-light-color; 
+    }
+}

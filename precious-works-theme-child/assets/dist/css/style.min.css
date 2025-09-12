@@ -7055,7 +7055,7 @@ progress {
   border: 0;
 }
 
-.pw-solid-button {
+.pw-solid-button, .single-product-section .single_add_to_cart_button.button.alt {
   display: inline-block;
   text-align: center;
   background-color: rgb(9, 40, 71);
@@ -7072,7 +7072,7 @@ progress {
   padding-bottom: 14px;
   text-decoration: none;
 }
-.pw-solid-button:hover, .pw-solid-button:focus, .pw-solid-button:focus-visible {
+.pw-solid-button:hover, .single-product-section .single_add_to_cart_button.button.alt:hover, .pw-solid-button:focus, .single-product-section .single_add_to_cart_button.button.alt:focus, .pw-solid-button:focus-visible, .single-product-section .single_add_to_cart_button.button.alt:focus-visible {
   font-weight: 600;
   border-radius: 30px;
   background-color: #ffffff;
@@ -7080,7 +7080,7 @@ progress {
   border: solid 1px rgb(88, 136, 191);
   text-decoration: none;
 }
-.pw-solid-button:focus, .pw-solid-button:focus-visible {
+.pw-solid-button:focus, .single-product-section .single_add_to_cart_button.button.alt:focus, .pw-solid-button:focus-visible, .single-product-section .single_add_to_cart_button.button.alt:focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 119, 204, 0.4);
   border-radius: 30px;
@@ -7418,25 +7418,54 @@ small, .small {
   margin: auto;
 }
 
+.single-product-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.single-product-section .single_add_to_cart_button.button.alt {
+  background-color: rgb(9, 40, 71);
+}
+.single-product-section div.product p.price {
+  color: rgb(219, 229, 255);
+}
+
+.woocommerce-breadcrumb {
+  display: none;
+}
+
+.archive-product-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.archive-product-section .archive-product-title-row {
+  padding-bottom: 50px;
+}
+.archive-product-section .woocommerce-ordering, .archive-product-section .woocommerce-result-count {
+  display: none;
+}
+.archive-product-section ul.products li.product .price {
+  color: rgb(219, 229, 255);
+}
+
 .site-header {
   background-color: rgb(9, 40, 71);
   padding-bottom: 15px;
   padding-top: 15px;
 }
 .site-header .main-navigation i {
-  font-size: 35px;
+  font-size: 25px;
 }
 .site-header .main-navigation i:hover {
   color: rgb(165, 190, 0);
 }
-.site-header .pw-solid-button {
+.site-header .pw-solid-button, .site-header .single-product-section .single_add_to_cart_button.button.alt, .single-product-section .site-header .single_add_to_cart_button.button.alt {
   background-color: rgb(165, 190, 0);
   color: rgb(9, 40, 71);
   font-size: 24px;
   padding-top: 14px;
   padding-bottom: 14px;
 }
-.site-header .pw-solid-button:hover {
+.site-header .pw-solid-button:hover, .site-header .single-product-section .single_add_to_cart_button.button.alt:hover, .single-product-section .site-header .single_add_to_cart_button.button.alt:hover {
   background-color: #679436;
   color: rgb(219, 229, 255);
 }
@@ -7904,7 +7933,7 @@ small, .small {
 .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .wildcard-content-wrapper {
   padding-bottom: 20px;
 }
-.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .button-area-wrapper a.pw-solid-button {
+.wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .button-area-wrapper a.pw-solid-button, .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .button-area-wrapper .single-product-section a.single_add_to_cart_button.button.alt, .single-product-section .wildcards-section .wildcards-container .wildcards-row .wildcards-col .single-wildcard-wrapper .button-area-wrapper a.single_add_to_cart_button.button.alt {
   min-width: auto;
 }
 
