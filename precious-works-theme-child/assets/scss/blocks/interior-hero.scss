@@ -1,12 +1,28 @@
 
 
 .interior-hero-section {
-    padding-top: 0; 
-    padding-bottom: 0; 
+    padding-top: 60px;
+    padding-bottom: 60px; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative; 
+    background-color: $color-tertiary; 
+    background-size: cover; 
+    color: $color-secondary; 
     @include media-breakpoint-down(sm) {
         padding-top: 30px; 
+        padding-bottom: 30px; 
+    }
+    .overlay {
+        background-color: black; 
+        opacity: 0.7; ;
     }
     .interior-hero-container {
+        &.has-bg-image {
+            color: $text-light-color; 
+            z-index: 2;
+            position: relative
+        }
         .interior-hero-row {
             .interior-hero-col {
                 .interior-hero-content-wrapper {
@@ -14,13 +30,15 @@
                     .title-wrapper {
                         width: $title-width; 
                         .title-content-wrapper {
-                            width: $title-width;
-                            margin: auto;  
                             .big-title-wrapper {
                                 margin-bottom: $title-element-spacing; 
                             }
                             .subtitle-wrapper {
                                 margin-bottom: $title-element-spacing; 
+                                p {
+                                    font-size: 1.3em;
+                                    margin-bottom: 0; 
+                                }
                             }
                         }
                         @include media-breakpoint-down(sm) {

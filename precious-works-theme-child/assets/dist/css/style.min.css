@@ -7866,29 +7866,45 @@ small, .small {
 }
 
 .interior-hero-section {
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: rgb(165, 190, 0);
+  background-size: cover;
+  color: rgb(9, 40, 71);
 }
 @media (max-width: 575.98px) {
   .interior-hero-section {
     padding-top: 30px;
+    padding-bottom: 30px;
   }
+}
+.interior-hero-section .overlay {
+  background-color: black;
+  opacity: 0.7;
+}
+.interior-hero-section .interior-hero-container.has-bg-image {
+  color: rgb(219, 229, 255);
+  z-index: 2;
+  position: relative;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper {
   background-color: transparent;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper {
-  width: 50%;
-}
-.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper {
-  width: 50%;
-  margin: auto;
+  width: 60%;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .big-title-wrapper {
   margin-bottom: 25px;
 }
 .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .subtitle-wrapper {
   margin-bottom: 25px;
+}
+.interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper .title-content-wrapper .subtitle-wrapper p {
+  font-size: 1.3em;
+  margin-bottom: 0;
 }
 @media (max-width: 575.98px) {
   .interior-hero-section .interior-hero-container .interior-hero-row .interior-hero-col .interior-hero-content-wrapper .title-wrapper {
