@@ -7150,6 +7150,10 @@ html :where(.wp-block) {
   max-width: none;
 }
 
+.color-text {
+  color: rgb(219, 229, 255);
+}
+
 h1, .h1 {
   font-family: "Baloo 2", "Trebuchet MS", sans-serif;
   font-size: 5.5rem;
@@ -7382,6 +7386,13 @@ small, .small {
 }
 .single-blog-post-section .single-blog-post-container .single-blog-post-row .single-blog-post-col .post-footer .social-share-list a:hover {
   color: rgb(0, 76.5, 153);
+}
+
+.event-archive-hero-section {
+  background-color: rgb(165, 190, 0);
+  color: rgb(9, 40, 71);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .event-archive-content-section {

@@ -26,3 +26,7 @@ html :where(.wp-block) {
 img {
     @extend .rounded-corners; 
 }
+
+.color-text {
+    color: $text-light-color; 
+}

@@ -2,12 +2,26 @@
  * Template Name: Top Level Events
 */  
 
+$today = date('Ymd'); // Format depends on how ACF stores the field
+
 $event_args = array(
-    'post_type' => 'events', 
-    'posts_per_page' => -1, 
-    'post_status' => 'publish', 
-    'fields' => 'ids', 
-); 
+    'post_type'      => 'events',
+    'posts_per_page' => -1,
+    'post_status'    => 'publish',
+    'fields'         => 'ids',
+    'meta_key'       => 'event_date',
+    'orderby'        => 'meta_value',
+    'order'          => 'ASC', // earliest first
+    'meta_type'      => 'DATE',
+    'meta_query'     => array(
+        array(
+            'key'     => 'event_date',
+            'value'   => $today,
+            'compare' => '>=',
+            'type'    => 'DATE',
+        ),
+    ),
+);
 
 $events = new WP_Query($event_args); 
 $event_title = get_the_title(); 

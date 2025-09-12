@@ -9,7 +9,7 @@ $event_date_formatted = date('F j, Y', strtotime($event_date));
 $start_time = get_field('start_time', $event_id);
 $end_time = get_field('end_time', $event_id);
 $event_location = get_field('event_location', $event_id);
-$directions_url; 
+$directions_url = ''; 
 if( !empty($event_location) ) {
     $lat = $event_location['lat'];
     $lng = $event_location['lng'];
