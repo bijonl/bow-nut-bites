@@ -1,0 +1,22 @@
+.wp-block-woocommerce-cart, .wp-block-woocommerce-checkout, .woocommerce-order  {
+    @extend .container; 
+    @extend .mx-auto; 
+}
+
+
+.wc-block-components-sidebar {
+    .wp-block-woocommerce-checkout-order-summary-block
+     {
+        border: 1px solid $text-light-color;
+    }
+}
+
+.wc-block-components-checkout-place-order-button {
+    @extend .pw-solid-button; 
+}
+
+.wp-block-woocommerce-checkout-order-summary-block {
+    .wc-block-components-totals-wrapper, .wp-block-woocommerce-checkout-order-summary-totals-block {
+        border-top: 1px solid $text-light-color;
+    }
+}
