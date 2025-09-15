@@ -11,6 +11,30 @@
     }
 }
 
+.breadcrumbs {
+    padding-bottom: 60px; 
+}
+
 .woocommerce-breadcrumb {
     display: none;
+}
+
+.woocommerce div.product div.summary {
+    width: 61%; 
+}
+
+.woocommerce div.product div.images {
+    width: 35%; 
+}
+
+.woocommerce-product-details__short-description {
+    width: 80%; 
+}
+
+.woocommerce div.product form.cart div.quantity {
+    margin-right: 15px; 
+}
+
+.woocommerce .quantity .qty {
+    height: 48px; 
 }

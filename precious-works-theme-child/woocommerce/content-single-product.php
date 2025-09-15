@@ -31,6 +31,19 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
+<?php $shop_page_url = get_permalink( wc_get_page_id( 'shop' ) ); 
+$product_description = $product->description; 
+
+?>
+
+<section class="breadcrumbs">
+	<a href="<?php echo $shop_page_url ?>" class="pw-solid-button">
+		<?php echo 'See All Products'; ?>
+	</a>
+</section>
+
+
+
 <div id="product-<?php the_ID(); ?>" <?php wc_product_class( '', $product ); ?>>
 
 	<?php
@@ -57,9 +70,16 @@ if ( post_password_required() ) {
 		 * @hooked woocommerce_template_single_sharing - 50
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
+		remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40, 0 );
+
 		do_action( 'woocommerce_single_product_summary' );
 		?>
+
+		<div class="">
+			<?php echo $product_description ?>
+		</div>
 	</div>
+	
 
 	<?php
 	/**
