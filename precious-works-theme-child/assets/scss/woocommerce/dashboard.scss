@@ -1,0 +1,39 @@
+.woocommerce-account {
+    .woocommerce {
+        @extend .container
+    }
+}
+
+.woocommerce-MyAccount-navigation-link--downloads {
+    display: none; 
+}
+
+.woocommerce table.shop_table {
+    border: 1px solid $color-secondary;
+    th, td, tbody th {
+        border: 1px solid $color-secondary;
+    }
+
+} 
+
+.woocommerce-MyAccount-navigation {
+    ul {
+        list-style: none;
+        li {
+            &.is-active {
+                a {
+                    color: $color-secondary; 
+                }
+                
+            }
+        }
+        a {
+            
+            text-decoration: none;
+            color: $text-light-color; 
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
