@@ -17,3 +17,13 @@
     color: $text-light-color; 
 }
 
+.wc-block-grid__product .wc-block-grid__product-title {
+    color: $text-light-color; 
+    text-decoration: none;
+    @extend .h6; 
+}
+
+.wc-block-grid__product .wc-block-grid__product-image, .wc-block-grid__product .wc-block-grid__product-link  {
+    text-decoration: none;
+}
+

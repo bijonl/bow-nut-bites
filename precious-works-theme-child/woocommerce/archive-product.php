@@ -54,7 +54,5 @@ get_header( 'shop' ); ?>
 
 <?php
 do_action( 'woocommerce_after_main_content' );
-// Uncomment if you want sidebar
-// do_action( 'woocommerce_sidebar' );
 
 get_footer( 'shop' );

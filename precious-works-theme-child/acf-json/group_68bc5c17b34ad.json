@@ -154,6 +154,27 @@
             "allow_in_bindings": 0
         },
         {
+            "key": "field_68c8791dffe3c",
+            "label": "Event Venue",
+            "name": "event_venue",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "allow_in_bindings": 0,
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_68bc5cd0d331a",
             "label": "Event Location",
             "name": "event_location",
@@ -192,5 +213,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1757203469
+    "modified": 1757968683
 }

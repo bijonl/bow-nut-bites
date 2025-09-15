@@ -93,9 +93,54 @@ add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
 
 function woo_remove_product_tabs( $tabs ) {
     unset( $tabs['description'] );          // Remove the description tab
-    // unset( $tabs['reviews'] );          // Remove the reviews tab
-    // unset( $tabs['additional_information'] );   // Remove the additional information tab
+    unset( $tabs['reviews'] );          // Remove the reviews tab
+    unset( $tabs['additional_information'] );   // Remove the additional information tab
     return $tabs;
+}
+
+/**
+ * Add a custom product data tab
+ */
+add_filter( 'woocommerce_product_tabs', 'woo_new_product_tabs' );
+function woo_new_product_tabs( $tabs ) {
+    global $post;
+
+    // Define your fields here: meta_key => Tab Title
+    $custom_tabs = array(
+        'how_its_made' => __( "How It's Made", 'woocommerce' ),
+        'benefits'  => __( "Treat Benefits", 'woocommerce' ),
+    );
+
+    $priority = 50; // starting priority
+
+    foreach ( $custom_tabs as $field_key => $tab_title ) {
+        $field_value = get_post_meta( $post->ID, $field_key, true );
+
+        if ( ! empty( $field_value ) ) {
+            $tabs[$field_key] = array(
+                'title'    => $tab_title,
+                'priority' => $priority,
+                'callback' => 'woo_new_product_tab_content'
+            );
+            $priority += 10; // increment for next tab
+        }
+    }
+
+    return $tabs;
+}
+
+/**
+ * Single callback for all custom tabs
+ */
+function woo_new_product_tab_content( $key, $tab ) {
+    global $post;
+
+    $field_value = get_post_meta( $post->ID, $key, true );
+
+    if ( ! empty( $field_value ) ) {
+        echo '<h2>' . esc_html( $tab['title'] ) . '</h2>';
+        echo wpautop( wp_kses_post( $field_value ) );
+    }
 }
 
 

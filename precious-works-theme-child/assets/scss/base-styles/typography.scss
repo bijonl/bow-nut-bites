@@ -22,6 +22,19 @@ a {
   }
 }
 
+// Links
+.background-secondary a:not(.pw-solid-button) {
+  color: $color-accent;
+  text-decoration: underline;
+  font-weight: 600; 
+
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+}
+
 // Lists
 ul, ol {
   margin: 0 0 1em 1.25em;
