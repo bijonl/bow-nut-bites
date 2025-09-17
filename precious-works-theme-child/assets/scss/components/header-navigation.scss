@@ -13,6 +13,11 @@
         color: $color-tertiary; 
       }
     }
+    a {
+      &:hover {
+        color: $color-tertiary; 
+      }
+    }
   }
 
 

@@ -28,7 +28,8 @@ get_header( 'shop' ); ?>
 		<div class="single-product-col col">
 			<?php while ( have_posts() ) { ?>
 			<?php the_post(); ?>
-				<?php wc_get_template_part( 'content', 'single-product' ); ?>
+				<?php wc_get_template_part( 'content', 'single-product' ); 
+								?>
 			<?php }; // end of the loop. ?>
 		</div>
 	  </div>

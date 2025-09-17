@@ -10,11 +10,46 @@
 
     ul.products li.product .price {
         color: $text-light-color; 
+        font-size: 24px; 
     }
 }
 
-.woocommerce-loop-product__title {
-    color: $text-light-color; 
+.woocommerce ul.products li.product .woocommerce-loop-product__title {
+    color: $text-light-color;
+    font-size: 1.3em;  
+}
+
+
+.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+    transition: all 0.2s ease-in-out;
+    padding: 10px;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 10px $color-secondary;
+        color: #ff6f61;
+        border-radius: 12PX;
+        border-color: $color-secondary; 
+     
+    }
+}
+
+
+
+.woocommerce ul.products li.product .product_type_simple.add_to_cart_button.ajax_add_to_cart {
+    display: flex; 
+    justify-content: center;
+    &:hover {
+        background-color: $color-secondary; 
+        color: $text-light-color; 
+    }
+
+}
+
+
+
+.product-description-note {
+    font-style: italic; 
+    font-size: 16px; 
 }
 
 .wc-block-grid__product .wc-block-grid__product-title {
