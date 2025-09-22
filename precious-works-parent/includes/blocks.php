@@ -38,15 +38,15 @@ function pw_register_default_blocks() {
         $parent_template = get_template_directory() . '/blocks/' . $block_slug . '/render.php';
 
         // Debugging: log paths
-        error_log("Checking block: $block_slug");
-        error_log("Child path: $child_template " . ( file_exists($child_template) ? '[FOUND]' : '[MISSING]' ));
-        error_log("Parent path: $parent_template " . ( file_exists($parent_template) ? '[FOUND]' : '[MISSING]' ));
+        // error_log("Checking block: $block_slug");
+        // error_log("Child path: $child_template " . ( file_exists($child_template) ? '[FOUND]' : '[MISSING]' ));
+        // error_log("Parent path: $parent_template " . ( file_exists($parent_template) ? '[FOUND]' : '[MISSING]' ));
 
         // Pick render template
         $render_template = file_exists($child_template) ? $child_template : $parent_template;
 
         // Extra safeguard: log chosen template
-        error_log("Using template for $block_slug: $render_template");
+        // error_log("Using template for $block_slug: $render_template");
 
         acf_register_block_type([
             'name'            => $block_slug,

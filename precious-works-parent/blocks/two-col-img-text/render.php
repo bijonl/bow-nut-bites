@@ -14,8 +14,8 @@ if(!$has_content) {
     return; 
 } 
 
-$image_col_width = 'col-sm-6'; 
-$text_col_width = 'col-sm-6'; ?>
+$image_col_width = 'col-lg-6'; 
+$text_col_width = 'col-lg-6'; ?>
 
 <section <?php echo pw_block_section_classes($block) ?>>
     <?php include(locate_template('blocks/partials/title-area.php')); ?>

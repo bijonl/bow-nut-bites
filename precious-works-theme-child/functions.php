@@ -1,5 +1,4 @@
-<?php
-if ( ! defined( 'ABSPATH' ) ) {
+<?php if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly
 }
 
@@ -142,13 +141,6 @@ function woo_new_product_tab_content( $key, $tab ) {
         echo wpautop( wp_kses_post( $field_value ) );
     }
 }
-
-
-
-
-
-?>
-
 
 
 
