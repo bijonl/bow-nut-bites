@@ -21,7 +21,7 @@
             <h4 class="mb-0 h5"><?php echo esc_html($event_name_display) ?></h4>
             <?php } ?>
             <?php if ($event_date_formatted || $start_time || $end_time) { ?>
-            <div class="d-flex w-50 justify-content-between">
+            <div class="d-sm-flex w-sm-50 justify-content-between">
                 <?php if ($event_date_formatted) { ?>
                 <p class="mb-0" aria-label="Event Date"><?php echo esc_html($event_date_formatted) ?></p>
                 <?php } ?>

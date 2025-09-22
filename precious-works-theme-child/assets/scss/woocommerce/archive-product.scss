@@ -62,3 +62,10 @@
     text-decoration: none;
 }
 
+.woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    @include media-breakpoint-down(sm) {
+        width: 100%; 
+        text-align: center;
+    }
+}
+

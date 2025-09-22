@@ -9,7 +9,7 @@
         <div class="single-event-title-container">
             <h3 class="single-event-title h6"><?php echo $event_name_display ?></h3>
              <?php if ($event_date_formatted || $start_time || $end_time) { ?>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-sm-between justify-content-center">
                 <?php if ($event_date_formatted) { ?>
                     <p class="mb-0" aria-label="Event Date"><?php echo esc_html($event_date_formatted) ?></p>
                 <?php } ?>

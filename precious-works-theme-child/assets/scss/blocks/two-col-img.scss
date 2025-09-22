@@ -1,0 +1,8 @@
+.two-column-image-and-text-section {
+    .image-col {
+    @include media-breakpoint-down(sm) {
+        padding-bottom: 20px; 
+    }
+}
+
+}

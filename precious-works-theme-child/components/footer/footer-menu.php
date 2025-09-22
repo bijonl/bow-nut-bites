@@ -1,5 +1,5 @@
 
-<div class="footer-main-menu-col col-3">
+<div class="footer-main-menu-col col-sm-3">
     <h5 class="text-center">About Us</h5>
     <nav id="footer-navigation" class="footer-navigation" role="navigation" aria-label="Footer Navigation">
         <?php 
@@ -15,7 +15,7 @@
     </nav>
 </div>
 
-<div class="footer-main-menu-col col-3">
+<div class="footer-main-menu-col col-sm-3">
     <h5 class="text-center">Get In Touch</h5>
     <nav id="footer-navigation" class="footer-navigation" role="navigation" aria-label="Footer Navigation">
         <?php 

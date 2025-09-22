@@ -7,10 +7,6 @@ $site_name = get_site_option('blogname');
 
 <header id="site-header" class="site-header">
   <div class="site-header-container container">
-    <!-- <div class="site-header-utility-row d-flex justify-content-between ms-auto">
-        <div><i class="fa-solid fa-cart-shopping"></i></div>
-        <div><i class="fa-solid fa-user"></i></div>
-    </div> -->
     <div class="site-header-row row align-items-center">
 
       <div class="header-menu menu-left col-sm-5 d-none d-lg-block">
@@ -34,8 +30,7 @@ $site_name = get_site_option('blogname');
             <label class="menu__btn" for="menu__toggle">
               <span></span>
             </label>
-              <?php include(locate_template('components/header-navigation/partials/header-menu-left.php')); ?>
-              <?php include(locate_template('components/header-navigation/partials/header-menu-right.php')); ?>
+              <?php include(locate_template('components/header-navigation/partials/mobile-menu.php')); ?>
           </div>
         </div>
       </div>

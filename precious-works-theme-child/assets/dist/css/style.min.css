@@ -7424,6 +7424,12 @@ small, .small {
   border: solid 2px rgb(165, 190, 0);
   padding: 30px;
 }
+@media (max-width: 575.98px) {
+  .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .post-meta-content {
   padding-bottom: 15px;
 }
@@ -7435,12 +7441,33 @@ small, .small {
   height: auto;
   aspect-ratio: 1/1;
 }
+@media (max-width: 575.98px) {
+  .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-image-wrapper {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+}
 .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper {
   width: 60%;
+}
+@media (max-width: 575.98px) {
+  .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 575.98px) {
+  .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .pw-solid-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-components-checkout-place-order-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-cart__submit-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single-product-section .single_add_to_cart_button.button.alt, .single-product-section .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single_add_to_cart_button.button.alt {
+    width: 100%;
+  }
 }
 .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .post-meta-wrapper {
   width: 65%;
   margin: auto;
+}
+@media (max-width: 575.98px) {
+  .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .post-meta-wrapper {
+    width: 100%;
+  }
 }
 
 .single-product-section {
@@ -7535,6 +7562,13 @@ small, .small {
 
 .wc-block-grid__product .wc-block-grid__product-image, .wc-block-grid__product .wc-block-grid__product-link {
   text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .woocommerce ul.products[class*=columns-] li.product, .woocommerce-page ul.products[class*=columns-] li.product {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .wc-block-components-product-name {
@@ -7707,14 +7741,17 @@ small, .small {
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ .menu__btn > span {
   transform: rotate(45deg);
+  background-color: rgb(9, 40, 71);
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ .menu__btn > span::before {
   top: 0;
   transform: rotate(0);
+  background-color: rgb(9, 40, 71);
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ .menu__btn > span::after {
   top: 0;
   transform: rotate(90deg);
+  background-color: rgb(9, 40, 71);
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper #menu__toggle:checked ~ #site-navigation ul {
   visibility: visible;
@@ -7736,7 +7773,7 @@ small, .small {
   position: absolute;
   width: 26px;
   height: 2px;
-  background-color: #616161;
+  background-color: rgb(219, 229, 255);
   transition-duration: 0.25s;
 }
 .site-header .site-header-container .site-header-row .site-header-mobile-button-col .mobile-menu-wrapper .menu__btn > span::before {
@@ -7791,13 +7828,31 @@ small, .small {
 .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
   max-width: 100px;
 }
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-logo-wrapper {
+    text-align: center;
+    padding-bottom: 20px;
+    max-width: 200px;
+    margin: auto;
+  }
+}
 .site-footer .site-footer-content-container .site-footer-content-row .logo-note-wrapper {
   padding-top: 20px;
   font-style: italic;
   font-size: 16px;
 }
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .logo-note-wrapper {
+    padding-bottom: 20px;
+  }
+}
 .site-footer .site-footer-content-container .site-footer-content-row .logo-note-wrapper p {
   margin-bottom: 0;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-footer-content-row .footer-main-menu-col {
+    padding-bottom: 20px;
+  }
 }
 .site-footer .site-footer-content-container .site-footer-content-row .footer-main-menu-col nav .social-list {
   display: flex;
@@ -7836,6 +7891,11 @@ small, .small {
 .site-footer .site-footer-content-container .site-copyright-content-row {
   padding-top: 40px;
   font-size: 14px;
+}
+@media (max-width: 575.98px) {
+  .site-footer .site-footer-content-container .site-copyright-content-row .copyright-wrapper {
+    padding-bottom: 20px;
+  }
 }
 
 .social-list {
@@ -8102,9 +8162,21 @@ small, .small {
   min-width: auto;
 }
 
+@media (max-width: 575.98px) {
+  .two-column-image-and-text-section .image-col {
+    padding-bottom: 20px;
+  }
+}
+
 .events-block-section .events-container .events-row .events-col .single-event {
   width: 70%;
   margin: auto;
+}
+@media (max-width: 575.98px) {
+  .events-block-section .events-container .events-row .events-col .single-event {
+    padding-bottom: 30px;
+    text-align: center;
+  }
 }
 .events-block-section .events-container .events-row .events-col .single-event .single-event-image-wrapper {
   padding-bottom: 25px;

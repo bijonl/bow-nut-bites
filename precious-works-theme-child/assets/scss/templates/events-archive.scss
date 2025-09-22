@@ -16,6 +16,10 @@
                     padding-bottom: 0; 
                 }
                 .single-event-tile  {
+                    @include media-breakpoint-down(sm) {
+                        flex-direction: column;
+                        text-align: center; 
+                    }
                     align-items: center;
                     @extend .rounded-corners; 
                     border: solid 2px $color-tertiary; 
@@ -30,15 +34,34 @@
                                 height: auto;
                                 aspect-ratio: 1/1;
                             }
+                            @include media-breakpoint-down(sm) {
+                                width: 100%; 
+                                padding-bottom: 20px; 
+                            }
                         }
 
                         .single-event-button-wrapper {
                             width: 60%; 
+                             @include media-breakpoint-down(sm) {
+                                width: 100%; 
+                            }
+
+                            .pw-solid-button {
+                                @include media-breakpoint-down(sm) {
+                                    width: 100%; 
+                                }
+
+                            }
+                            
+                    
                         }
 
                         .post-meta-wrapper {
                             width: 65%; 
                             margin: auto; 
+                             @include media-breakpoint-down(sm) {
+                                width: 100%;
+                            }
                         }
                     }
                 }

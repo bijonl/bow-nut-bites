@@ -5,6 +5,10 @@
                 .single-event {
                     width: 70%; 
                     margin: auto; 
+                    @include media-breakpoint-down(sm) {
+                        padding-bottom: 30px; 
+                        text-align: center;
+                    }
                     .single-event-image-wrapper {
                         padding-bottom: 25px; 
                     }

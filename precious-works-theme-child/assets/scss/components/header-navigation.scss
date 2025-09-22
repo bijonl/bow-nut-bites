@@ -150,16 +150,22 @@
             // Transform hamburger to "X"
             &:checked ~ .menu__btn > span {
               transform: rotate(45deg);
+              background-color: $color-secondary;
+
             }
 
             &:checked ~ .menu__btn > span::before {
               top: 0;
               transform: rotate(0);
+              background-color: $color-secondary;
+
             }
 
             &:checked ~ .menu__btn > span::after {
               top: 0;
               transform: rotate(90deg);
+              background-color: $color-secondary;
+
             }
 
             // Slide in the mobile nav

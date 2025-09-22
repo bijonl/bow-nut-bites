@@ -10,6 +10,12 @@
             border-bottom: solid 1px $color-primary; 
             .footer-logo-wrapper {
                 max-width: 100px; 
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                    padding-bottom: 20px; 
+                    max-width: 200px;
+                    margin: auto;
+                }
             }
 
             .logo-note-wrapper {
@@ -17,12 +23,18 @@
                 padding-top: 20px; 
                 font-style: italic;
                 font-size: 16px;
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 20px; 
+                }
                 p {
                     margin-bottom: 0; 
                 }
             }
 
             .footer-main-menu-col  {
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 20px; 
+                }
                 nav {
                     @import './partials/social-list'; 
                     ul {
@@ -48,6 +60,11 @@
         .site-copyright-content-row {
             padding-top: 40px;
             font-size: 14px; 
+            .copyright-wrapper {
+                @include media-breakpoint-down(sm) {
+                    padding-bottom: 20px; 
+                }
+            }
         }
     }
 }
