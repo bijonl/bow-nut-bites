@@ -21,7 +21,7 @@ function pw_theme_setup() {
     pw_register_nav_menus();
 }
 
-// add_action( 'after_setup_theme', 'pw_theme_setup' );
+add_action( 'after_setup_theme', 'pw_theme_setup' );
 
 /**
  * Register block editor filters
