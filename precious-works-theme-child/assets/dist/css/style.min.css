@@ -8162,9 +8162,9 @@ small, .small {
   min-width: auto;
 }
 
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .two-column-image-and-text-section .image-col {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
 }
 
