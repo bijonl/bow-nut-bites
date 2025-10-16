@@ -143,4 +143,20 @@ function woo_new_product_tab_content( $key, $tab ) {
 }
 
 
+add_filter('walker_nav_menu_start_el', function($item_output, $item, $depth, $args) {
+    // Example condition: match menu title
+      if (str_ends_with(untrailingslashit($item->url), '/cart')) {
+        // Append your dynamic PHP value
+        $cart_full = WC()->cart->get_cart_contents_count() > 0; 
+
+        if($cart_full) {
+            $item_output .= ' (' . WC()->cart->get_cart_contents_count() . ')';
+        }
+        
+    }
+
+    return $item_output;
+}, 10, 4);
+
+
 

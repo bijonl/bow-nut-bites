@@ -7632,6 +7632,12 @@ small, .small {
   padding-bottom: 15px;
   padding-top: 15px;
 }
+.site-header .current-menu-item a {
+  color: rgb(165, 190, 0);
+}
+.site-header.cart-not-empty .fa-solid.fa-cart-shopping {
+  color: rgb(165, 190, 0);
+}
 .site-header .main-navigation i {
   font-size: 25px;
 }

@@ -1,11 +1,10 @@
 <?php $site_logo = get_field('site_logo', 'options'); 
 $image_alt = get_post_meta($site_logo, '_wp_attachment_image_alt', TRUE);
 $site_name = get_site_option('blogname'); 
+$cart_status = !empty(WC()->cart->get_cart()) ? 'cart-not-empty' : 'empty-cart'; ?>
 
-?>
 
-
-<header id="site-header" class="site-header">
+<header id="site-header" class="site-header <?php echo $cart_status ?>">
   <div class="site-header-container container">
     <div class="site-header-row row align-items-center">
 

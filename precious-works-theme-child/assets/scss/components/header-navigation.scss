@@ -6,6 +6,18 @@
   padding-bottom: 15px; 
   padding-top: 15px; 
 
+  .current-menu-item {
+    a {
+      color: $color-tertiary; 
+    }
+  }
+
+  &.cart-not-empty {
+    .fa-solid.fa-cart-shopping {
+        color: $color-tertiary; 
+    }
+  }
+
   .main-navigation {
     i {
       font-size: 25px;
@@ -118,6 +130,7 @@
 
               li {
                 padding: 0 25px;
+                
 
                 &:first-child {
                   padding-left: 0;
