@@ -4,7 +4,10 @@
 .site-header {
   background-color: $header-background;
   padding-bottom: 15px; 
-  padding-top: 15px; 
+  .alert-bar {
+    background-color: $color-tertiary; 
+    color: black; 
+  }
 
   .current-menu-item {
     a {
@@ -63,6 +66,7 @@
   }
 
   .site-header-container {
+    padding-top: 15px; 
 
     .site-header-utility-row {
       padding-bottom: 25px; 

@@ -7630,7 +7630,10 @@ small, .small {
 .site-header {
   background-color: rgb(9, 40, 71);
   padding-bottom: 15px;
-  padding-top: 15px;
+}
+.site-header .alert-bar {
+  background-color: rgb(165, 190, 0);
+  color: black;
 }
 .site-header .current-menu-item a {
   color: rgb(165, 190, 0);
@@ -7670,6 +7673,9 @@ small, .small {
   width: 100px;
   height: auto;
   transition: all 0.2s ease-in-out;
+}
+.site-header .site-header-container {
+  padding-top: 15px;
 }
 .site-header .site-header-container .site-header-utility-row {
   padding-bottom: 25px;

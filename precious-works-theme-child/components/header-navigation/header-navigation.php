@@ -1,10 +1,15 @@
 <?php $site_logo = get_field('site_logo', 'options'); 
+$alert_bar = get_field('alert_bar', 'options');
+$show_alert_bar = get_field('show_alert_bar', 'options');
 $image_alt = get_post_meta($site_logo, '_wp_attachment_image_alt', TRUE);
 $site_name = get_site_option('blogname'); 
 $cart_status = !empty(WC()->cart->get_cart()) ? 'cart-not-empty' : 'empty-cart'; ?>
 
 
 <header id="site-header" class="site-header <?php echo $cart_status ?>">
+  <?php if($show_alert_bar) { ?>
+    <div class="alert-bar text-center"><?php echo $alert_bar ?></div>
+  <?php } ?>
   <div class="site-header-container container">
     <div class="site-header-row row align-items-center">
 
