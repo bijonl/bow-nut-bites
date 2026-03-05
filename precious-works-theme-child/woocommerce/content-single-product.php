@@ -33,6 +33,7 @@ if ( post_password_required() ) {
 ?>
 <?php $shop_page_url = get_permalink( wc_get_page_id( 'shop' ) ); 
 $product_description = $product->description; 
+$review_page_url = get_field('review_page_url', 'options'); 
 
 ?>
 
@@ -78,7 +79,18 @@ $product_description = $product->description;
 		<div class="">
 			<?php echo $product_description ?>
 		</div>
+		<?php if($review_page_url) { ?>
+			<div class="leave-a-review">
+				<a aria-label="link to page to leave a review" 
+				href="<?php echo $review_page_url ?>"
+				target="_blank">
+				>
+					Leave a Review
+				</a>
+			</div>
+		<?php } ?>
 	</div>
+
 	
 
 	<?php
@@ -88,10 +100,11 @@ $product_description = $product->description;
 	 * @hooked woocommerce_output_product_data_tabs - 10
 	 * @hooked woocommerce_upsell_display - 15
 	 * @hooked woocommerce_output_related_products - 20
-	 */
-	do_action( 'woocommerce_after_single_product_summary' );
-	?>
+	 */ ?>
+	<?php do_action( 'woocommerce_after_single_product_summary' ); ?>
+	
 </div>
+
 
 <?php 
 

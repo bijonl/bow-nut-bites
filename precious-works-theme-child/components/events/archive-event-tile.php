@@ -43,9 +43,9 @@
         </div>
         <?php } ?>
         <?php if ($directions_url || ($event_link && $event_link['url'])) { ?>
-        <div class="single-event-button-wrapper post-meta-content d-flex justify-content-between">
+        <div class="single-event-button-wrapper post-meta-content d-xl-flex justify-content-between">
             <?php if ($directions_url) { ?>
-            <a href="<?php echo esc_url($directions_url) ?>" class="pw-solid-button" aria-label="Get directions to event">
+            <a href="<?php echo esc_url($directions_url) ?>" class="pw-solid-button mb-3 mb-xl-0" aria-label="Get directions to <?php echo $event_name_display ?>">
                 <i class="fa-solid fa-location-pin" aria-hidden="true"></i>
                 Get Directions
             </a>

@@ -7448,12 +7448,15 @@ small, .small {
   }
 }
 .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper {
-  width: 60%;
+  width: 80%;
 }
-@media (max-width: 575.98px) {
+@media (max-width: 991.98px) {
   .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper {
     width: 100%;
   }
+}
+.event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .pw-solid-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-components-checkout-place-order-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-cart__submit-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single-product-section .single_add_to_cart_button.button.alt, .single-product-section .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single_add_to_cart_button.button.alt {
+  white-space: nowrap;
 }
 @media (max-width: 575.98px) {
   .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .pw-solid-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-components-checkout-place-order-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .wc-block-cart__submit-button, .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single-product-section .single_add_to_cart_button.button.alt, .single-product-section .event-archive-content-section .event-posts-container .event-posts-row .event-posts-col .single-event-tile .single-event-button-wrapper .single_add_to_cart_button.button.alt {
@@ -7507,6 +7510,15 @@ small, .small {
 
 .woocommerce .quantity .qty {
   height: 48px;
+}
+
+.woocommerce div.product form.cart .variations select {
+  background-color: white;
+  padding-left: 10px;
+}
+
+.woocommerce-Price-amount.amount {
+  color: white;
 }
 
 .archive-product-section {
